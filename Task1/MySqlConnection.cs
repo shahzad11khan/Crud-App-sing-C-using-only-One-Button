@@ -28,16 +28,16 @@ namespace FF_POSSystem
 
         // bellow four line are credentails  for SAP Crystel Report 203 server
 
-        public static string ServerName = "192.168.1.50";
-        public static string DatabaseName = "DB_POSSystem";
-        public static string UserID = "sa";
-        public static string Password = "adminasim$$";
+        public static string ServerName = "server name";
+        public static string DatabaseName = "database name";
+        public static string UserID = "your name";
+        public static string Password = "password ";
 
-        public static string LinkServerName = "192.168.1.8";
-        //public static string ServerName = "203.99.184.247,14333";
-        //public static string DatabaseName = "DB_POSSystem";
-        //public static string UserID = "sa";
-        //public static string Password = "Abacus$123";
+        public static string LinkServerName = "192";
+        //public static string ServerName = "20";
+        //public static string DatabaseName = "";
+        //public static string UserID = "";
+        //public static string Password = "";
 
         //public static string conLive = "there is your database link";
        
