@@ -39,22 +39,21 @@ namespace FF_POSSystem
         //public static string UserID = "sa";
         //public static string Password = "Abacus$123";
 
-        //public static string conLive = "Data Source=192.168.1.9;Network Library=DBMSSOCN;Initial Catalog=DB_POSSystem;Persist Security Info=True;User ID=sa;Password=Abacus@123;";
+        //public static string conLive = "there is your database link";
        
-        public static string conLive = "Data Source=192.168.1.50,1433;Network Library=DBMSSOCN;Initial Catalog=DB_POSSystem;Persist Security Info=True;User ID=sa;Password=adminasim$$;";
-
+        public static string conLive = "there is your database link";
         //1.9 POS
-        //public static string conLive = "Data Source=203.99.184.247,1434;Network Library=DBMSSOCN;Initial Catalog=DB_POSSystem;Persist Security Info=True;User ID=sa;Password=Abacus@123;";
+        //public static string conLive = "there is your database link";
         //1.2 POS
-      // public static string conLive = "Data Source=192.168.1.2;Network Library=DBMSSOCN;Initial Catalog=DB_POSSystem;Persist Security Info=True;User ID=sa;Password=Abacus$123;";
+      // public static string conLive = "there is your database link";
        //1.2 public ip
-       // public static string conLive = "Data Source=203.99.184.247,14333;Network Library=DBMSSOCN;Initial Catalog=DB_POSSystem;Persist Security Info=True;User ID=sa;Password=Abacus$123;";
+       // public static string conLive = "there is your database link";
         
         public static SqlConnection GetConnected()
         {
            
             //202.141.236.205,1434
-           string  connetionString = "Data Source=192.168.1.2,1433;Network Library=DBMSSOCN;Initial Catalog=Sync_Db;Persist Security Info=True;User ID=sa;Password=Abacus$123;";
+           string  connetionString = "there is your database link along with id and password";
 
            SqlConnection con = new SqlConnection(connetionString);
             con.Open();
@@ -85,8 +84,8 @@ namespace FF_POSSystem
         
         public static SqlConnection GetConnectedSAP()
         {
-            //SqlConnection con = new SqlConnection("Data Source=192.168.1.2,1433;Network Library=DBMSSOCN;Initial Catalog=DB_POSSystem;Persist Security Info=True;User ID=sa;Password=Abacus$123;");
-            SqlConnection con = new SqlConnection("Data Source=192.168.1.2,1433;Network Library=DBMSSOCN;Initial Catalog=FF_STEEL_1;Persist Security Info=True;User ID=sa;Password=Abacus$123;");
+          
+            SqlConnection con = new SqlConnection("there is your database link along with id and password");
              con.Open();
             return con;
         }
