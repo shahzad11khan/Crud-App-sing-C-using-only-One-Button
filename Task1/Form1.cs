@@ -58,9 +58,9 @@ namespace Task1
                 { 
                    //string connetionString;
                   //SqlConnection MyConn2;
-                  //  connetionString = "Data Source=192.168.1.2,1433;Network Library=DBMSSOCN;Initial Catalog=Sync_Db;Persist Security Info=True;User ID=sa;Password=Abacus$123;";
+                  //  connetionString = "there is your database link";
                    // FF_POSSystem.MySqlConnection.GetConnected(); //this function call from other class
-                    string Insert = "insert into employee(ID,emp_name,emp_salary,DocDestroy) values('" + this.ID.Text + "','" + this.emp_name.Text + "','" + this.emp_salary.Text + "','" + this.DocDestroy.Text + "');";
+                    string Insert = "insert into employeeeee(ID,emp_name,emp_salary,DocDestroy) values('" + this.ID.Text + "','" + this.emp_name.Text + "','" + this.emp_salary.Text + "','" + this.DocDestroy.Text + "');";
                     //  MyConn2 = new SqlConnection(connetionString);   
                     SqlCommand MyCommand2 = new SqlCommand(Insert, FF_POSSystem.MySqlConnection.GetConnected());
                     SqlDataReader MyReader2;
@@ -87,7 +87,7 @@ namespace Task1
                 {
                     FF_POSSystem.MySqlConnection.GetConnected();
                     string Update = "update employee set ID='" + this.ID.Text + "',emp_name='" + this.emp_name.Text + "',emp_salary='" + this.emp_salary.Text + "',DocDestroy='" + this.DocDestroy.Text + "' where ID='" + this.ID.Text + "';";
-                    SqlCommand MyCommand2 = new SqlCommand(Update, FF_POSSystem.MySqlConnection.GetConnected());
+                    SqlCommand MyCommand2 = new SqlCommand(Update, databasename.MySqlConnection.GetConnected());
                     SqlDataReader MyReader2; 
                     MyReader2 = MyCommand2.ExecuteReader();     // Here our query will be executed and data saved into the database.                    
                     MessageBox.Show("Data Is Updated");
@@ -110,7 +110,7 @@ namespace Task1
                 {
                     FF_POSSystem.MySqlConnection.GetConnected();
                     string Delete = "delete from employee where ID='" + this.ID.Text + "';"; 
-                    SqlCommand MyCommand2 = new SqlCommand(Delete, FF_POSSystem.MySqlConnection.GetConnected());
+                    SqlCommand MyCommand2 = new SqlCommand(Delete, databasename.MySqlConnection.GetConnected());
                     SqlDataReader MyReader2;
                     MyReader2 = MyCommand2.ExecuteReader();     // Here our query will be executed and data saved into the database.                    
                     MessageBox.Show("Data Is Delete");
